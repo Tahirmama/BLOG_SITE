@@ -1,0 +1,49 @@
+.body{
+    display: inline-flex;
+
+}
+.para{
+    text-align: center;
+    margin-top:15%;
+    color:green;
+     font-family:fantasy;
+     padding: 2%;
+     font-size: 27px;
+
+}
+.bodylink{
+    text-decoration: none;
+    color: black;
+}
+.bodybutton{
+
+    padding: 2%;
+    width: 60%;
+    background-color: lightcyan;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: grey 3px 3px 3px 3px;
+}
+.bodybutton:hover{
+    color: wheat;
+    background-color: rgb(104, 231, 104);
+    cursor: pointer  ;
+}
+.bloglink{
+    text-decoration: none;
+    color: black;
+}
+.blogbutton{
+    
+    padding: 1%;
+    width: 30%;
+    background-color: lightcyan;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: grey 3px 3px 3px 3px;
+}
+.blogbutton:hover{
+    color: wheat;
+    background-color: rgb(104, 231, 104);
+    cursor: pointer  ;
+}

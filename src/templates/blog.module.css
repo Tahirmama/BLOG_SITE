@@ -1,0 +1,18 @@
+.bloglink{
+    text-decoration: none;
+    color: black;
+}
+.blogbutton{
+    
+    padding: 1%;
+    width: 30%;
+    background-color: lightcyan;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: grey 3px 3px 3px 3px;
+}
+.blogbutton:hover{
+    color: wheat;
+    background-color: rgb(104, 231, 104);
+    cursor: pointer  ;
+}
