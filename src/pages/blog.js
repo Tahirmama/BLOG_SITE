@@ -48,17 +48,19 @@ const Blog = () => {
               <h2>
                 <Link to={`/blog/${edge.node.slug}/`}>{edge.node.title}</Link>
               </h2>    
-            <h3> Author is :<i> {edge.node.author}</i></h3>    
+            <h3> Author is :<i> {edge.node.author}</i></h3> 
+            <div className={containerStyles.blg}>   
               {edge.node.image && (
                 <Img
-                  className="featured"
+                className={containerStyles.image}
                   fluid={edge.node.image.fluid}
                   alt={edge.node.title}
                 />
               )}
-              <p className="excerpt">
+              <p className={containerStyles.excerpt}>
                 {edge.node.excerpt.childMarkdownRemark.excerpt}
               </p>
+              </div>
               <div className="button">
                 <Link to={`/blog/${edge.node.slug}/`}>Read More</Link>
               </div>
