@@ -15,4 +15,6 @@
     color: wheat;
     background-color: rgb(104, 231, 104);
     cursor: pointer  ;
+    font-size: 30px;
+    width: 50%;
 }

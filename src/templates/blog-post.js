@@ -37,11 +37,6 @@ const BlogPost = props => {
   return (
     <Layout>
       <SEO title={props.data.contentfulPost.title} />
-      <button className={blogStyles.blogbutton} >
-      <Link to="/blog/" className={blogStyles.bloglink}>Visit the Blog Page</Link>
-      </button>
-      <br/>
-      <br/>
       <br/>
       <div className="content" align="justify">
         <h1>{props.data.contentfulPost.title}</h1>
@@ -60,6 +55,9 @@ const BlogPost = props => {
         )}
 
       </div>
+      <button className={blogStyles.blogbutton} >
+      <Link to="/blog/" className={blogStyles.bloglink}>Visit the Blog Page</Link>
+      </button>
     </Layout>
   )
 }

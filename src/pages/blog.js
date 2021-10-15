@@ -17,8 +17,9 @@ const Blog = () => {
               id
               slug
               subtitle
+              author
               image {
-                fluid(maxWidth: 550) {
+                fluid(maxWidth: 750) {
                   ...GatsbyContentfulFluid
                 }
               }
@@ -36,20 +37,18 @@ const Blog = () => {
   return (
     <Layout>
       <SEO title="Blog" />
-
-      <button className={containerStyles.blogbutton} >
-        <Link to="/" className={containerStyles.bloglink}>{"<= "}BACK TO HOME PAGE</Link>
-      </button>
-      <br/>
-      <br/>
       <br/>
       <ul className="posts">
+      
         {data.allContentfulPost.edges.map(edge => {
+          
           return (
+            <div className={containerStyles.blog}>
             <li className="post" key={edge.node.id}>
               <h2>
                 <Link to={`/blog/${edge.node.slug}/`}>{edge.node.title}</Link>
-              </h2>        
+              </h2>    
+            <h3> Author is :<i> {edge.node.author}</i></h3>    
               {edge.node.image && (
                 <Img
                   className="featured"
@@ -64,9 +63,15 @@ const Blog = () => {
                 <Link to={`/blog/${edge.node.slug}/`}>Read More</Link>
               </div>
             </li>
+          </div>
           )
+  
         })}
       </ul>
+      
+      <button className={containerStyles.blogbutton} >
+        <Link to="/" className={containerStyles.bloglink}>{"<= "}BACK TO HOME PAGE</Link>
+      </button>
     </Layout>
   )
 }

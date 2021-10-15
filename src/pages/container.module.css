@@ -1,3 +1,10 @@
+.blog{
+    border: solid 3px black;
+    padding: 5%;
+    margin-bottom: 3%;
+    background-color: rgb(134 251 95 / 52%);
+}
+
 .body{
     display: inline-flex;
 
@@ -46,4 +53,6 @@
     color: wheat;
     background-color: rgb(104, 231, 104);
     cursor: pointer  ;
+    font-size: 30px;
+    width: 50%;
 }
